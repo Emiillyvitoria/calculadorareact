@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+* {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 250px;
+    align-items: center;
+    border: 10px solid #0e0d0d;
+    background: #110f0f;
+    border-radius: 5px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+
+input {
+    height: 75px;
+    width: 249px;
+    background-color: hsla(0, 67%, 1%, 0.829);
+    border: 0;
+    color: #fcf6f6;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+
+#clear {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    color: hsla(0, 95%, 47%, 0.829);
+}
+
+#result {
+    grid-column: 3 / 5;
+    grid-row: 5;
+    color: hsla(0, 47%, 91%, 0.829);
+}
+
+#backspace {
+    color: #141414;
+}
+
+button {
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+}
+
+input:focus, input:active, button:focus, button:active {
+    outline: none;
+}
+
+.btn-clear {
+    background-color: rgb(2, 2, 2);
+}
+
+.btn-backspace {
+    background-color: aliceblue;
+}
+
+.btn-operation {
+    background-color: #444;
+}
+
+.btn-equal {
+    background-color: #333;
+}
